@@ -1,0 +1,236 @@
+body {
+     background-image: url("paperBG.jpg");
+    background-color: #EAEAE9;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.leftSide {
+    Cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    color: #0047FF;
+    float: left;
+}
+
+.rightSide {
+    Cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.rightIcons {
+    width: 45px;
+    margin: 10px;
+}
+
+.main {
+    position: relative;
+    /*    top: 150px;*/
+    text-align: center;
+    padding: 300px 0px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 80px;
+    letter-spacing: 8px;
+    margin: 30px;
+}
+
+.searchBarBig {
+    margin: auto;
+    width: 800px;
+    background-color: white;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 5px 20px #2C3F70;
+}
+
+.searchBarSmol {
+    display: none;
+}
+
+.searchBarLoc {
+    display: none;
+}
+
+.searchIcon {
+    width: 50px;
+    opacity: 0.7;
+}
+
+.locationIcon {
+    width: 50px;
+    opacity: 0.7;
+    border-radius: 1.5px;
+    border-left: 2px solid rgba(0, 0, 0, .6);
+}
+
+.searchText {
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    height: 45px;
+    width: 400px;
+}
+
+.locationText {
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    height: 45px;
+    width: 280px;
+}
+
+.bigFooter {
+    position: fixed;
+    width: 95%;
+    bottom: 0;
+    opacity: 0.8;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    Cursor: pointer;
+}
+
+.smolFooter {
+    display: none;
+}
+
+/*based on iPad Pro 11 inch (834 x 1194) and search box size*/
+@media screen and (max-width: 870px) {
+    body {
+/*        background-color: aquamarine;*/
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .searchBarBig {
+        display: none;
+    }
+
+    .searchBarSmol {
+        margin: auto;
+        width: 550px;
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 5px 20px #2C3F70;
+    }
+
+    .searchBarLoc {
+        margin: auto;
+        margin-top: 50px;
+        width: 350px;
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 5px 20px #2C3F70;
+    }
+
+    .locationIcon {
+        border-left: 0px;
+    }
+    
+    .searchText{
+        width: 490px;
+    }
+    
+    .locationText{
+        width: 290px;
+    }
+
+    .bigFooter {
+        width: 85%;
+        justify-content: space-between;
+    }
+
+}
+
+
+/*based on iPhone 8 Plus (414 x 736) and search box size*/
+@media screen and (max-width: 600px) {
+    body {
+/*        background-color: pink;*/
+    }
+
+    .main {
+        padding: 150px 0px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .searchBarBig {
+        display: none;
+    }
+
+    .searchBarSmol {
+        margin: auto;
+        width: 350px;
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 5px 20px #2C3F70;
+    }
+
+    .searchBarLoc {
+        margin: auto;
+        margin-top: 50px;
+        width: 250px;
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 5px 20px #2C3F70;
+    }
+    
+.searchText{
+        width: 290px;
+    }
+    
+    .locationText{
+        width: 190px;
+    }
+
+    .bigFooter {
+        display: none;
+    }
+
+
+    .smolFooter {
+        position: fixed;
+        width: 70%;
+        bottom: 0;
+        opacity: 0.8;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        Cursor: pointer;
+    }
+
+    .rightSide {
+        right: -5px;
+    }
+
+}
